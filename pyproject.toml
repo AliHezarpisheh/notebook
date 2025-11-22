@@ -1,0 +1,38 @@
+[project]
+name = "notebook"
+version = "1.0.0"
+description = "A personal space for structured learning."
+authors = [
+    {name = "ali",email = "alihezarpisheh@outlook.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mdformat (>=1.0.0,<2.0.0)",
+    "mdformat-toc (>=0.5.0,<0.6.0)",
+    "mdformat-gfm (>=1.0.0,<2.0.0)",
+    "mdformat-pyproject (>=0.1.1,<0.2.0)",
+    "pre-commit (>=4.4.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mdformat]
+wrap = 88  # Wrap lines at 88th character
+number = true  # Format numbered lists (1. 1. 1.)
+end_of_line = "lf"  # Standard across repos
+validate = true  # Make mdformat fail in CI if something is off
+exclude = [
+    "node_modules/**",
+    ".venv/**",
+]
+
+extensions = [
+    "gfm",  # GitHub-Flavored Markdown
+    "toc",  # Generates/fixes Table of Contents
+]
