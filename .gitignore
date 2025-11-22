@@ -115,3 +115,4 @@ logs/
 ### Custom files for this specific project ###
 run.py
 **/.keys/**
+node_modules/
