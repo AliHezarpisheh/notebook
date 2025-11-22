@@ -1,0 +1,24 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "A personal space for structured learning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliHezarpisheh/notebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AliHezarpisheh/notebook/issues"
+  },
+  "homepage": "https://github.com/AliHezarpisheh/notebook#readme",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.19.1"
+  }
+}

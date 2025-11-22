@@ -1,0 +1,21 @@
+{
+  "default": true,
+
+  // ---- Compatibility with mdformat ----
+  "MD013": {
+      "line_length": 88,
+      "heading_line_length": 88,
+      "code_block_line_length": 88
+  },
+  "MD029": { "style": "one" },  // Ordered list: always "1." (mdformat style)
+  "MD007": { "indent": 2 },  // List indentation (plays well with mdformat)
+
+  "MD033": false,  // Allow inline HTML (e.g., <br>)
+  "MD041": true,  // Require top-level heading (good practice)
+
+  "MD025": {
+      "front_matter_title": ""
+  },
+
+  "MD046": { "style": "fenced" }  // Enforce fenced code blocks (consistent)
+}
