@@ -10,29 +10,11 @@ repos:
     - id: check-yaml
     - id: check-json
 
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
-    hooks:
-      - id: mdformat
-        args:
-          - --wrap=88
-        additional_dependencies:
-          - mdformat-gfm
-          - mdformat-toc
-        exclude: |
-          (^\.venv/)|
-          (^node_modules/)
-        files: \.md$
-
   - repo: local
     hooks:
-      - id: markdownlint
-        name: markdownlint-cli2
-        entry: npx markdownlint-cli2 "**/*.md" "!./.venv/**" "!./node_modules/**"
+      - id: markdown-format
+        name: markdown-format
+        entry: ./scripts/format.sh
         language: system
         pass_filenames: false
         types: [markdown]
-        files: \.md$
-        exclude: |
-          (^\.venv/)|
-          (^node_modules/)
