@@ -16,5 +16,6 @@ repos:
         name: markdown-format
         entry: ./scripts/format.sh
         language: system
-        pass_filenames: false
+        pass_filenames: true
         types: [markdown]
+        files: \.md$

@@ -1,9 +1,8 @@
 # notebook
 
 A personal space for structured learning.\
-This repository contains my technical
-**notes**, **labs**, and **Jupyter notebooks** across topics like Software Engineering,
-Linux, networking, DevOps, Data, and security.
+This repository contains my technical **notes**, **labs**, and **Jupyter notebooks**
+across topics like Software Engineering, Linux, networking, DevOps, Data, and security.
 
 ## Structure
 
