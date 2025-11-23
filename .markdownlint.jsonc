@@ -7,7 +7,7 @@
       "heading_line_length": 88,
       "code_block_line_length": 88
   },
-  "MD029": { "style": "one" },  // Ordered list: always "1." (mdformat style)
+  "MD029": { "style": "ordered" },  // Ordered list: use ordered nums (mdformat style)
   "MD007": { "indent": 2 },  // List indentation (plays well with mdformat)
 
   "MD033": false,  // Allow inline HTML (e.g., <br>)
