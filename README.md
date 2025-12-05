@@ -14,3 +14,6 @@ across topics like Software Engineering, Linux, networking, DevOps, Data, and se
 
 To build a consistent, organized workspace for deepening my understanding of computer
 science.
+
+> **❗By the way, the repo could be cloned and setup properly on your system, running the
+> `./scripts/format.sh` to format the markdown texts you have.**
