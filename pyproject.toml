@@ -7,19 +7,14 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
-    "mdformat (>=1.0.0,<2.0.0)",
-    "mdformat-toc (>=0.5.0,<0.6.0)",
-    "mdformat-gfm (>=1.0.0,<2.0.0)",
-    "mdformat-pyproject (>=0.1.1,<0.2.0)",
-    "pre-commit (>=4.4.0,<5.0.0)"
+    "mdformat>=1.0.0",
+    "mdformat-gfm>=1.0.0",
+    "mdformat-pyproject>=0.1.1",
+    "mdformat-toc>=0.5.0",
+    "pre-commit>=4.5.0",
 ]
-
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
 
 
 [tool.mdformat]
