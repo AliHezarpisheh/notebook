@@ -116,3 +116,4 @@ logs/
 run.py
 **/.keys/**
 node_modules/
+**/exam.md
