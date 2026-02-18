@@ -92,7 +92,10 @@ confirmation method determines that how a resource decide wether the token is va
 have 2 methods:
 
 - Bearer: I have explained it below in its own section.
-- Proof of possession: This is something more advanced compare to bearer tokens.
+- Proof of possession: This is something more advanced compare to bearer tokens. This
+  method involves the token containing a key of some kind in some encrypted section,
+  which it will demonstrate the proof of possession of the token later in the resource
+  server.
 
 ### Bearer Tokens
 
