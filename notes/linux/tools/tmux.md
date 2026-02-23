@@ -35,10 +35,12 @@ Let's list some useful keybindings, after we insert the prefix key:
 - **d**: Detach from the session.
 - **c**: Create a new window.
 - **numbers(0, 1, 2)**: Moving to the specified window.
+- **n**: Moving to the next window.
 - **,**: Rename the current window.
 - **&**: Remove the window.
 - **t**: Show time on the pane.
 - **PgUp and PgDn**: Scroll the terminal.
+- **s**: List all the tmux sessions.
 
 You could press `Ctrl + b + :` to give tmux commands. Here are some useful commands:
 
