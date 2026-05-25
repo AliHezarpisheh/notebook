@@ -29,7 +29,7 @@ the actors:
   permission.
 - **client**: The application that needs to obtain access to the resources.
 - **authorization server**: It is where the authorization and token endpoints are served
-  used for driving the delegated authentication scenarios described in previous season.
+  used for driving the delegated authorization scenarios described in previous season.
 
 ## Oauth 2.0 Grants
 

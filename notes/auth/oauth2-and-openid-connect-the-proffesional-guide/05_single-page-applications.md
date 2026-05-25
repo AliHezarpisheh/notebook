@@ -31,3 +31,7 @@ but I have added several more notes to it, gathered from different places and my
 experience trying to implement an oauth 2.0 server:) I haven't done it when I am writing
 this text but as soon as the internet in my country goes up again, I will start learning
 and doing more.
+
+UPDATE: The internet was shut down almost 2.5 months in the country, but I am back(by
+spending tons of money to connect). But I'm here and I am starting to develop my Oauth
+2.0 server.

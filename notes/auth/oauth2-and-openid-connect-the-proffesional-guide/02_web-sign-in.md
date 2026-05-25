@@ -74,7 +74,7 @@ should validate and how we should do that?
   behind the authorization server. `It could be find via the discovery endpoint.`
 - aud(The audience): Represent the particular application the token has been issued for.
   in the oidc context, this should be the client id.
-  `This should be checked with the  actual client id`.
+  `This should be checked with the actual client id`.
 - iat/exp: The timestamps of when the token is issued and should be expired. There are
   obvious reasons why you should validate these when validating a JWT token, and not
   just in oidc context, in every scenario which you are validating a JWT token.

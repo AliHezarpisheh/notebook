@@ -29,12 +29,12 @@ have to do to have a viable solution. Consider the following factors:
   are going to use and connect to.
 - Development stack: Minor differences between development stacks that translates into
   big differences in the code you have to write to access the resources. For example,
-  you would write a different code for connecting to an API using Python and C.
-- Identities resources: You can have several ways to expose your identity online. You
-  can be a member of social media application, or you can be an employee of a company.
-  You connect to a facebook in different way you connect to an active directory. This
-  adds up to the complexity. If you want to extract identity from these repositories,
-  you have to find a way of doing it according to each repositories requirements.
+  you would write a different code for connecting to an API using Python compare to C.
+- Identity resources: You can have several ways to expose your identity online. You can
+  be a member of social media application, or you can be an employee of a company. You
+  connect to a facebook in different way you connect to an active directory. This adds
+  up to the complexity. If you want to extract identity from these repositories, you
+  have to find a way of doing it according to each repositories requirements.
 - Client types: There are different clients for accessing resources nowadays. There are
   a lot of devices that can access resources, even our watches(smartwatches) can access
   data too! This adds up to the complexity.

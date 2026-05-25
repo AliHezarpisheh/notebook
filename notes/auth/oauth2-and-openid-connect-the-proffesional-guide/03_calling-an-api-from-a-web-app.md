@@ -154,7 +154,7 @@ however, OpenID Connect specifies a mechanism to request refresh tokens.
 Also, we don't to give our user's a bad experience, so the refresh token flow do the
 operations without displaying prompts to the user.
 
-![Refresh Token Flow](./images/refresh-token-flow)
+![Refresh Token Flow](./images/refresh-token-flow.png)
 
 Great, we can see two things have changed compare to the auth code flow. We have added a
 new scope called `offline_access` in our request to the authorization endpoint, and the
