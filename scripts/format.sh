@@ -14,4 +14,7 @@ echo -e "${GREEN}Executing mdformat...${NC}"
 mdformat $MDFORMAT_ARG
 
 echo -e "\n${GREEN}Executing markdownlint-cli2...${NC}"
-npx markdownlint-cli2 $MARKDOWNLINT_CLI2_ARG "!./.venv/**" "!./node_modules/**"
+npx markdownlint-cli2 \
+  "$MARKDOWNLINT_CLI2_ARG" \
+  "!./.venv/**" \
+  "!./node_modules/**"
