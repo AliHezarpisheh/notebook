@@ -18,7 +18,7 @@ Setup an ecosystem that could contain shell scripts, static analysis in CI/CD pi
 pre-commit hooks (which I explained below), etc. The static analysis and formatting is a
 must for the code bases you maintain.
 
-### `scripts/` Directory.
+### `scripts/` Directory
 
 Pack the Commands inside shell scripts in the `scripts/` directory.
 
@@ -71,7 +71,7 @@ should find the optimal solution for managing passwords and secrets.
 Use libraries and frameworks to bring your env variables and configurations to the app's
 memory.
 
-## Documentation - No, Don't Run From It!
+## Documentation - No, Don't Run From It
 
 ### `docs/` Directory
 
@@ -116,7 +116,7 @@ enhance it generally.
 
 Do it only when needed.
 
-## Dockerize - Don't be Lame and Old!
+## Dockerize - Don't be Lame and Old
 
 Always create a `Dockerfile` for the project. ALWAYS. Make sure that you adhere docker
 and containerization best practices(including .dockerignore, multi-stage builds, etc).
