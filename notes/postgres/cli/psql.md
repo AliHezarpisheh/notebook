@@ -25,6 +25,9 @@ These are psql-specific commands, no sql here:
 | `\du`           | list users/roles                                |
 | `\di`           | list indexes                                    |
 | `\df`           | list functions                                  |
+| `\dT`           | list data types                                 |
+| `\dT+`          | list data types with additional info            |
+| `\dT oauth2.*`  | list data types in `oauth2` schema              |
 | `\x`            | toggle expanded display (great for wide rows)   |
 | `\timing`       | toggle showing query execution time             |
 | `\q`            | quit                                            |
