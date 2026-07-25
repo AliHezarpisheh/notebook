@@ -69,6 +69,65 @@ For downgrading to the previous revision:
 alembic downgrade -1
 ```
 
+## `env.py`
+
+This script is the core engine of alembic migrations. It's created during `alembic init`
+command.
+
+The script has some features, tricks, and challenges that I should point out here.
+
+### `context.configure()`
+
+This function call should be done early because a lot of methods on the environment
+context require this method to be called.
+
+The method configure a migration context within the environment context.
+
+### `include_name` Function
+
+We told that `context.configure()` is used to configure a migration context. It receives
+a parameter called `include_name`, a callable function which is given the chance to
+return `True` or `False` for any database reflected object based on its name, including
+database schema names when the `include_schemas` flag is set to True.
+
+I have talked about a common issue of alembic related to database schemas in
+[SQLAlchemy Common Issues](common-issues.md).
+
+```py
+def include_name(
+    name: str | None,
+    type_: Literal[
+        "schema",
+        "table",
+        "column",
+        "index",
+        "unique_constraint",
+        "foreign_key_constraint",
+    ],
+    parent_names: MutableMapping[
+        Literal[
+            "schema_name",
+            "table_name",
+            "schema_qualified_table_name",
+        ],
+        str | None,
+    ],
+) -> bool:
+    if type_ == "schema":
+        return name in SCHEMAS
+    return True
+
+
+context.configure(
+    url=url,
+    target_metadata=target_metadata,
+    literal_binds=True,
+    dialect_opts={"paramstyle": "named"},
+    include_schemas=True,
+    include_name=include_name,
+)
+```
+
 ## My Conventions
 
 Conventionally, I put the `alembic/` directory into the `config/`.
