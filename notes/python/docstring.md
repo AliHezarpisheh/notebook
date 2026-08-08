@@ -83,7 +83,7 @@ pages from the docstrings.
 ```txt
 ## Instructions
 
-Write numpy-style docstrings, with maximum 88 characters at each line, having an actual
+Write NumPy-style docstrings, with a maximum of 88 characters per line, having an actual
 single-line explanation for the first line.
 
 ## Considerations
