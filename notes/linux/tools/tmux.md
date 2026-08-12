@@ -61,3 +61,22 @@ terminals on one screen.
 There are also some other use cases, such as using tmux like nohup(not recommending it
 for important process - just development or test processes), and poor-man's screen
 sharing.
+
+## Issues
+
+### Tmux Color
+
+Like any other thing in computer (except 0s and 1s), colors aren't just "sent-as-is".
+Colors get described by a color code, and there's more than one language for that code:
+
+- **True Color (24-bit)**: Make the exact colors, millions of possible colors, this is
+  what a lot of tools are configured to use.
+- **256-Color Mode**: Only 256 colors, and picks the closest color.
+
+By default, tmux doesn't know it is allowed to pass true colors, so it translates it to
+the 256-color list. For fixing it:
+
+```bash
+set -g default-terminal "tmux-256color"
+set -ag terminal-overrides ",*256col*:RGB"
+```
